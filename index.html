@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>익스피디아+트리바고</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta property="og:url"                content="https://yugobear.github.io/expedia_copy/" />
+        <meta property="og:type"               content="website" />
+        <meta property="og:title"              content="익스피디아+트리바고" />
+        <meta property="og:description"        content="익스피디아+트리바고 혼종" />
+        <meta property="og:image"              content="https://github.com/yugobear/expedia_copy/blob/master/img/opengraph.jpg?raw=true" />
+
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+        <link rel="stylesheet" href="css.css">
+
+
+    </head>
+    <body>
+
+
+        <div class="container-fluid my-0 mx-0 px-0 py-0">
+            <div class="col-12 header my-0 mx-0 px-0 py-0">
+                <div class="row">
+                    <div class="col-12 col-sm-3 logo px-0">
+                        <img src="img/logo.svg" class="py-2 px-2">
+                    </div>
+                    <div class="col-12 col-sm-7 menu navbar1">
+                        <nav class="navbar navbar-expand-sm navbar-light  navbar1">
+                            <a class="navbar-brand" href="#"></a>
+                            <button class="navbar-toggler navbar1" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon "></span>
+                            </button>
+
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav mr-auto">
+
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            여행 예약
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <a class="dropdown-item" href="#">호텔</a>
+                                            <a class="dropdown-item" href="#">항공</a>
+                                            <!--                                            <div class="dropdown-divider"></div>-->
+                                            <a class="dropdown-item" href="#">항공+호텔</a>
+                                            <a class="dropdown-item" href="#">렌터카</a>
+                                            <a class="dropdown-item" href="#">마감 특가</a>
+                                            <a class="dropdown-item" href="#">추천 프로모션</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            내 일정
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <a class="dropdown-item" href="#">일정</a>
+                                            <a class="dropdown-item" href="#">렌터카 일정</a>
+                                            <!--                                            <div class="dropdown-divider"></div>-->
+                                            <a class="dropdown-item" href="#">온라인 체크인 및 수하물</a>
+                                            <a class="dropdown-item" href="#">영수증 확인</a>
+
+                                        </div>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            고객 지원
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <a class="dropdown-item" href="#">고객 지원</a>
+                                            <a class="dropdown-item" href="#">익스피디아 리워드 FAQ</a>
+                                            <!--                                            <div class="dropdown-divider"></div>-->
+                                            <a class="dropdown-item" href="#">내 여행 관리</a>
+                                            <a class="dropdown-item" href="#">고객 의견</a>
+
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">내 리스트</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">English</a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="col-12 col-sm-2 userarea">
+                        <ul class="nav nav-pills">
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">계정</a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">로그인</a>
+
+                                    <a class="dropdown-item" href="#">회원가입</a>
+
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 maincon my-0 mx-0 px-0 py-0">
+                <br>
+                <div class="col-11 col-sm-11 col-lg-7 mx-auto alert alert-warning alert-dismissible fade show con con_1" role="alert">
+
+                    <span class="alert-1">
+                        <strong>여행 권고 사항</strong> 
+                        <br>
+                        코로나19(COVID-19)의 확산으로 현재 고객 요청이 급증하여 전화 연결이 어렵습니다. 긴급한 지원을 필요로 하는 고객을 먼저 도와드릴 수 있도록 72시간 이내 출발 예정이신 분 외에는 고객 서비스에 대한 전화를 미뤄주시기 바랍니다. 신속하게 예약을 취소하실 수 있도록 최근에 업데이트를 진행했으니 자세한 내용은 다음에서 확인해 주세요.
+                        <br>
+                        <a href="" class="alert-link" data-toggle="modal" data-toggle="modal" data-target="#exampleModalScrollable">자세히 알아보기</a>
+
+
+                        <!--
+Button trigger modal 
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+Launch demo modal
+</button>
+-->
+
+                        <!-- Modal -->
+                        <div class="modal fade"  id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable" role="document">
+                                <div class="modal-content px-2">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalScrollableTitle">집 떠나면 개고생</h5>
+                                        <button type="button" class="close mr-2" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p class="landname">✔️아시아태평양</p>
+                                        <p class="cuntryname">나우루, 네팔, 뉴질랜드, 니우에, 대만, 동티모르, 라오스, 마셜제도, 마이크로네시아, 마카오, 말레이시아, 몰디브, 몽골, 바누아투, 베트남, 부탄, 브루나이, 사모아, 사모아(미국령), 솔로몬제도, 스리랑카, 싱가포르, 인도네시아, 일본, 쿡제도, 키리바시, 태국, 투발루, 통가, 파푸아뉴기니, 피지, 필리핀, 호주, 홍콩</p>
+
+                                        <p class="landname">✔️미주</p>
+                                        <p class="cuntryname">과테말라, 그레나다, 바하마, 벨리즈, 볼리비아, 브라질, 세인트루시아, 수리남, 아이티, 아르헨티나, 앤티가바부다, 에콰도르, 엘살바도르, 온두라스, 우루과이, 자메이카, 칠레, 캐나다, 코스타리카, 콜롬비아, 쿠바, 트리니다드토바고, 파나마, 파라과이, 페루</p>
+
+                                        <p class="landname">✔️유럽</p>
+                                        <p class="cuntryname">노르웨이, 덴마크, 독일, 라트비아, 러시아, 루마니아, 룩셈부르크, 리투아니아, 몬테네그로, 몰도바, 벨기에, 보스니아헤르체고비나, 북마케도니아, 불가리아, 사이프러스, 세르비아, 스웨덴, 스위스, 스페인, 슬로바키아, 아르메니아, 아이슬란드, 에스토니아, 오스트리아, 우즈베키스탄, 우크라이나, 이탈리아, 조지아, 체코, 카자흐스탄, 크로아티아, 키르기즈스탄, 터키, 투르크메니스탄, 포르투갈, 폴란드, 프랑스, 핀란드, 헝가리</p>
+
+                                        <p class="landname">✔️중동</p>
+                                        <p class="cuntryname">레바논, 리비아, 모로코, 바레인, 사우디, 아랍에미리트, 알제리, 오만, 요르단, 이라크, 이스라엘, 카타르, 쿠웨이트, 튀니지, 팔레스타인</p>
+
+                                        <p class="landname">✔️아프리카</p>
+                                        <p class="cuntryname">
+                                            가나, 가봉, 감비아, 기니비사우, 나미비아, 나이지리아, 남수단, 남아프리카공화국, 니제르, 라이베리아, 르완다, 마다가스카르, 말라위, 모리셔스, 민주콩고, 보츠와나, 부르키나파소, 상투메프린시페, 세이셸, 수단, 앙골라, 우간다, 적도기니, 차드, 카메룬, 케냐, 코모로, 코트디부아르, 콩고공화국, 토고</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+                                        <!--        <button type="button" class="btn btn-primary">Save changes</button>-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </span>
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="col-11 col-sm-11 col-lg-7 mx-auto py-3 jumbotron">
+
+                    <input class="btn btn-primary jumbomenu" type="button" value="&#127976; 호텔">
+
+                    <input class="btn btn-primary jumbomenu" type="button" value="&#9992;  항공">
+
+                    <button  class="btn btn-primary jumbomenu" type="button" data-toggle="tooltip" data-placement="bottom"  title="항공+호텔 예약시 10% 할인!">
+                        &#127976;+&#9992; 항공+호텔
+                    </button>
+
+                    <input class="btn btn-primary jumbomenu" type="button" value="&#128664; 렌터카">
+
+                    <p class="my-3"></p>
+                    <div class="row py-2 fwhite">
+                        <div class="col-12">
+                            <input type="text" class="form-control" placeholder="검색할 위치를 입력하세요." name="location" class="w-100">
+                        </div>
+                    </div>
+                    <div class="row py-2 fwhite">
+                        <div class="col-12 col-sm-3">
+                            <label for="startdate">체크인</label>
+                            <input type="date" class="form-control" id="startdate" name="startdate">
+
+                        </div>
+
+                        <div class="col-12 col-sm-3">
+                            <label for="lastdate">체크아웃</label>
+                            <input type="date" class="form-control" id="lastdate" name="lastdate">
+                        </div>
+                        <div class="col-6 col-sm-2">
+
+                            <label for="inputState">여행객</label>
+                            <select id="inputState" class="form-control">
+                                <option selected>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4+</option>
+                            </select>
+
+                        </div>
+                        <div class="col-6 col-sm-2">
+
+                            <label  for="inputState">객실</label>
+                            <select id="inputState" class="form-control">
+                                <option selected>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4+</option>
+                            </select>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-sm-7">
+                            <p class="alert fwhite">
+                                코로나19(COVID-19) 관련 여행 권고 사항에 따라 일부 목적지의 경우 특정 날짜에 예약이 불가능할 수 있습니다. <a href=""data-toggle="modal" data-target="#exampleModalCenter">자세한 내용을 확인해 보세요.</a>
+                            </p>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLongTitle">한국인 입국금지 조치 국가 현황</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="img/dontgo.jpg" class="modalimg">
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <button type="button" class="btn btn-primary btn-lg searchb1">검색하기</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!--
+<h1 class="display-4">Hello, world!</h1>
+<p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+<hr class="my-4">
+<p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+<a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+-->
+
+
+                <div class="col-11 col-sm-11 col-lg-7  px-0 mx-auto">
+                    <div id="accordion">
+                        <div class="cardsetting card">
+                            <div class="card-header  border-0" id="headingOne">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link px-0 mx-0  btna" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <span class="font-b font-wb">등록하여 회원가를 이용하세요!</span><span class="font-b"> - 엄선된 호텔을 10% 이상 추가 할인 받으실 수 있어요. &#9660;</span>
+
+                                    </button>
+                                </h5>
+                            </div>
+
+                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-6">
+
+                                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                                        </div>
+                                        <div class="col-2 px-0 mx-0">
+                                            <input class="shadow btn btn-primary " type="button" value="등록하기">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <span class="message">
+                                                익스피디아의 특가 상품과 혜택 정보를 받는 데 동의하시는 것이며, 언제든지 구독을 취소하실 수 있습니다.
+                                            </span>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+            </div> 
+            <!--        maincon끝-->
+            <div class="container-fluid my-0 mx-0 px-0 py-0">
+                <div class="row w-100">
+                    <div class="col-11 contents mx-auto">
+                        <br>
+                        <div class="row">
+                            <div class="col-11 col-sm-11 col-lg-7 mx-auto">
+                                <p class="subtitle">인기 여행지, 클릭 한 번이면 확인하실 수 있어요!</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-11 col-sm-11 col-lg-7 mx-auto">
+
+                                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" id="topcity-tab" data-toggle="tab" href="#topcity" role="tab" aria-controls="topcity" aria-selected="true">Top 인기도시</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="topplace-tab" data-toggle="tab" href="#topplace" role="tab" aria-controls="topplace" aria-selected="false">Top 인기여행지</a>
+                                    </li>
+
+                                </ul>
+                                <div class="tab-content w-100" id="myTabContent">
+                                    <div class="tab-pane fade show active col-12" id="topcity" role="tabpanel" aria-labelledby="topcity-tab">
+                                        <!--                                   인기도시-->
+                                        <!-- card slider start -->
+
+                                        <!--Carousel Wrapper-->
+                                        <div id="multi-item-example" class="carousel slide carousel-multi-item my-3" data-ride="carousel">
+
+                                            <!--Controls-->
+                                            <div class="controls-top">
+                                                <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
+                                                <a class="btn-floating" href="#multi-item-example" data-slide="next"><i class="fa fa-chevron-right"></i></a>
+                                            </div>
+                                            <!--/.Controls-->
+
+                                            <!--Indicators-->
+
+                                            <ol class="carousel-indicators">
+                                                <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+                                                <li data-target="#multi-item-example" data-slide-to="1"></li>
+                                                <li data-target="#multi-item-example" data-slide-to="2"></li>
+                                            </ol>
+
+                                            <!--/.Indicators-->
+
+                                            <!--Slides-->
+                                            <div class="carousel-inner" role="listbox">
+
+                                                <!--First slide-->
+                                                <div class="carousel-item active">
+
+                                                    <div class="row">
+                                                        <div class="col-md-4">
+                                                            <div class="card mb-2">
+                                                                <img class="card-img-top" src="img/topcity01.jpg"
+                                                                     alt="Card image cap">
+                                                                <div class="card-body">
+                                                                    <h4 class="card-title">마추픽추</h4>
+                                                                    <p class="card-text">잉카 제국의 본거지를 방문하여 흥미로운 유적지와 북적이는 대도시, 광활한 자연 경관과 거친 강물, 그리고 아마존의 밀림을 탐험해 보세요.</p>
+                                                                    <a class="btn btn-primary">보러가기</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-md-4 clearfix d-none d-md-block">
+                                                            <div class="card mb-2">
+                                                                <img class="card-img-top" src="img/topcity02.jpg"
+                                                                     alt="Card image cap">
+                                                                <div class="card-body">
+                                                                    <h4 class="card-title">파리</h4>
+                                                                    <p class="card-text">프랑스의 수도! 박물관, 예술, 연극 등으로 유명한 이 도시의 문화 명소로는 조지 퐁피두 박물관, 루브르 박물관, 파리 오페라 등이 있습니다.</p>
+                                                                    <a class="btn btn-primary">보러가기</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-md-4 clearfix d-none d-md-block">
+                                                            <div class="card mb-2">
+                                                                <img class="card-img-top" src="img/topcity03.jpg"
+                                                                     alt="Card image cap">
+                                                                <div class="card-body">
+                                                                    <h4 class="card-title">팜스프링스</h4>
+                                                                    <p class="card-text"> 미국 캘리포니아주  사막 지대의 멋진 자연경관, 천연 온천까지 즐길 수 있는 리조트 타운. 골프 코스들도 잘 갖추고 있어서, 골퍼들의 천국!</p>
+                                                                    <a class="btn btn-primary">보러가기</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <!--/.First slide-->
+
+                                                <!--Second slide-->
+                                                <div class="carousel-item">
+
+                                                    <div class="row">
+                                                        <div class="col-md-4">
+                                                            <div class="card mb-2">
+                                                                <img class="card-img-top" src="img/topcity04.jpg"
+                                                                     alt="Card image cap">
+                                                                <div class="card-body">
+                                                                    <h4 class="card-title">로스앤젤레스</h4>
+                                                                    <p class="card-text">로스앤젤레스는 유구한 역사와 풍요로운 문화유산을 보유한 세계적인 대도시. 우주왕복선 엔데버호, 월트 디즈니 콘서트 홀, 게티 센터. </p>
+                                                                    <a class="btn btn-primary">보러가기</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-md-4 clearfix d-none d-md-block">
+                                                            <div class="card mb-2">
+                                                                <img class="card-img-top" src="img/topcity05.jpg"
+                                                                     alt="Card image cap">
+                                                                <div class="card-body">
+                                                                    <h4 class="card-title">런던</h4>
+                                                                    <p class="card-text">멋진 스타일을 뽐내는 쇼어디치부터 펑키한 분위기의 캠던, 시크한 포토벨로 로드에 이르기까지 런던은 다양한 풍경이 하나로 어우러진 곳입니다.</p>
+                                                                    <a class="btn btn-primary">보러가기</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-md-4 clearfix d-none d-md-block">
+                                                            <div class="card mb-2">
+                                                                <img class="card-img-top" src="img/topcity06.jpg"
+                                                                     alt="Card image cap">
+                                                                <div class="card-body">
+                                                                    <h4 class="card-title">뉴욕</h4>
+                                                                    <p class="card-text">뉴욕을 대표하는 최고의 명소만 짧게 둘러 보아도 일주일 가까운 시간이 순식간에 지나갈 것! 파이어 스테이트 빌딩, 자유의 여신상, 센트럴 파크 </p>
+                                                                    <a class="btn btn-primary">보러가기</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <!--/.Second slide-->
+
+                                                <!--Third slide-->
+                                                <div class="carousel-item">
+
+                                                    <div class="row">
+                                                        <div class="col-md-4">
+                                                            <div class="card mb-2">
+                                                                <img class="card-img-top" src="img/topcity07.jpg"
+                                                                     alt="Card image cap">
+                                                                <div class="card-body">
+                                                                    <h4 class="card-title">홍콩</h4>
+                                                                    <p class="card-text">어쩌고저쩌고어쩌고저쩌고어쩌고저쩌고어쩌고저쩌고어쩌고저쩌고어쩌고저쩌고어쩌고저쩌고어쩌고저쩌고어쩌고저쩌고어쩌고저쩌고어쩌고저쩌고</p>
+                                                                    <a class="btn btn-primary">Button</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-md-4 clearfix d-none d-md-block">
+                                                            <div class="card mb-2">
+                                                                <img class="card-img-top" src="img/topcity08.jpg"
+                                                                     alt="Card image cap">
+                                                                <div class="card-body">
+                                                                    <h4 class="card-title">도쿄</h4>
+                                                                    <p class="card-text">어쩌고저쩌고어쩌고저쩌고어쩌고저쩌고어쩌고저쩌고어쩌고저쩌고어쩌고저쩌고어쩌고저쩌고어쩌고저쩌고어쩌고저쩌고어쩌고저쩌고어쩌고저쩌고</p>
+                                                                    <a class="btn btn-primary">Button</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-md-4 clearfix d-none d-md-block">
+                                                            <div class="card mb-2">
+                                                                <img class="card-img-top" src="img/topcity09.jpg"
+                                                                     alt="Card image cap">
+                                                                <div class="card-body">
+                                                                    <h4 class="card-title">브뤼셀</h4>
+                                                                    <p class="card-text">어쩌고저쩌고어쩌고저쩌고어쩌고저쩌고어쩌고저쩌고어쩌고저쩌고어쩌고저쩌고어쩌고저쩌고어쩌고저쩌고어쩌고저쩌고어쩌고저쩌고어쩌고저쩌고</p>
+                                                                    <a class="btn btn-primary">Button</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <!--/.Third slide-->
+
+                                            </div>
+                                            <!--/.Slides-->
+
+
+
+
+                                        </div>
+                                        <!--/.Carousel Wrapper-->
+
+
+                                        <!-- card slider end-->
+
+
+
+
+                                    </div>
+
+
+
+                                    <div class="tab-pane fade col-12" id="topplace" role="tabpanel" aria-labelledby="topplace-tab">
+                                        <!--                                인기여행지-->
+
+                                        <!-- card slider start -->
+
+                                        <!--Carousel Wrapper-->
+                                        <div id="multi-item-example1" class="carousel slide carousel-multi-item my-3" data-ride="carousel">
+
+                                            <!--Controls-->
+                                            <div class="controls-top">
+                                                <a class="btn-floating" href="#multi-item-example1" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
+                                                <a class="btn-floating" href="#multi-item-example1" data-slide="next"><i class="fa fa-chevron-right"></i></a>
+                                            </div>
+                                            <!--/.Controls-->
+
+                                            <!--Indicators-->
+
+                                            <ol class="carousel-indicators">
+                                                <li data-target="#multi-item-example1" data-slide-to="0" class="active"></li>
+                                                <li data-target="#multi-item-example1" data-slide-to="1"></li>
+
+                                            </ol>
+
+                                            <!--/.Indicators-->
+
+                                            <!--Slides-->
+                                            <div class="carousel-inner" role="listbox">
+
+                                                <!--First slide-->
+                                                <div class="carousel-item active">
+
+                                                    <div class="row">
+                                                        <div class="col-md-4">
+                                                            <div class="card mb-2">
+                                                                <img class="card-img-top" src="img/toptrip01.jpg"
+                                                                     alt="Card image cap">
+                                                                <div class="card-body">
+                                                                    <h4 class="card-title">북미</h4>
+                                                                    <p class="card-text">북아메리카북아메리카북아메리카북아메리카북아메리카북아메리카북아메리카북아메리카북아메리카북아메리카북아메리카북아메리카북아메리카</p>
+                                                                    <a class="btn btn-primary">보러가기</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-md-4 clearfix d-none d-md-block">
+                                                            <div class="card mb-2">
+                                                                <img class="card-img-top" src="img/toptrip02.jpg"
+                                                                     alt="Card image cap">
+                                                                <div class="card-body">
+                                                                    <h4 class="card-title">아시아</h4>
+                                                                    <p class="card-text">아시아아시아아시아아시아아시아아시아아시아아시아아시아아시아아시아아시아아시아아시아아시아아시아아시아아시아아시아아시아아시아</p>
+                                                                    <a class="btn btn-primary">보러가기</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-md-4 clearfix d-none d-md-block">
+                                                            <div class="card mb-2">
+                                                                <img class="card-img-top" src="img/toptrip03.jpg"
+                                                                     alt="Card image cap">
+                                                                <div class="card-body">
+                                                                    <h4 class="card-title">유럽</h4>
+                                                                    <p class="card-text">유럽유럽유럽유럽유럽유럽유럽유럽유럽유럽유럽유럽유럽유럽유럽유럽유럽유럽유럽유럽유럽유럽유럽유럽유럽유럽유럽유럽유럽유럽유럽유럽유럽</p>
+                                                                    <a class="btn btn-primary">보러가기</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <!--/.First slide-->
+
+                                                <!--Second slide-->
+                                                <div class="carousel-item">
+
+                                                    <div class="row">
+                                                        <div class="col-md-4">
+                                                            <div class="card mb-2">
+                                                                <img class="card-img-top" src="img/toptrip04.jpg"
+                                                                     alt="Card image cap">
+                                                                <div class="card-body">
+                                                                    <h4 class="card-title">오세아니아</h4>
+                                                                    <p class="card-text">오세아니아오세아니아오세아니아오세아니아오세아니아오세아니아오세아니아오세아니아오세아니아오세아니아오세아니아오세아니아오세아니아오세아니아 </p>
+                                                                    <a class="btn btn-primary">보러가기</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-md-4 clearfix d-none d-md-block">
+                                                            <div class="card mb-2">
+                                                                <img class="card-img-top" src="img/toptrip05.jpg"
+                                                                     alt="Card image cap">
+                                                                <div class="card-body">
+                                                                    <h4 class="card-title">남미</h4>
+                                                                    <p class="card-text">남아메리카남아메리카남아메리카남아메리카남아메리카남아메리카남아메리카남아메리카남아메리카남아메리카남아메리카남아메리카남아메리카남아메리카</p>
+                                                                    <a class="btn btn-primary">보러가기</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-md-4 clearfix d-none d-md-block">
+                                                            <div class="card mb-2">
+                                                                <img class="card-img-top" src="img/toptrip06.jpg"
+                                                                     alt="Card image cap">
+                                                                <div class="card-body">
+                                                                    <h4 class="card-title">아프리카</h4>
+                                                                    <p class="card-text">아프리카아프리카아프리카아프리카아프리카아프리카아프리카아프리카아프리카아프리카아프리카아프리카아프리카아프리카아프리카</p>
+                                                                    <a class="btn btn-primary">보러가기</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <!--/.Second slide-->
+                                            </div>
+                                            <!--/.Slides-->
+                                        </div>
+                                        <!--/.Carousel Wrapper-->
+                                        <!-- card slider end-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--            인기여행지 끝 -->
+            <div class="row my-4">
+
+            </div>
+
+            <!--            이용방법 시작-->
+            <div class="row pt-5  mb-5">
+                <div class="col-11 col-sm-11 col-lg-7 mx-auto my-3 howtorow">
+                    <div class="row col-12">
+                        <div class="col-12 col-lg-6 mx-auto">
+                            <h3 class="howtotitle">
+                                트리바고(trivago) - 호텔 요금 비교 사이트</h3>
+                            <p class="howtotext">트리바고는 단 몇 번의 클릭만으로 전 세계 400개 이상의 호텔 예약 사이트, 190여 개국의 300만여 개 호텔을 검색해 비교 결과를 보여드립니다. 연간 14억 명이 방문하는 저희 트리바고 사이트에서 호텔 비교 기능을 이용하여 같은 도시의 특가 상품을 간편하게 비교하실 수 있습니다. 부산 및 도쿄 여행 정보는 물론 이들 도시의 호텔을 빠르고 쉽게 찾으실 수 있습니다. 발리와 주변 지역의 다양한 호텔을 찾아보고 조금 더 길게 여행을 여유롭게 즐겨보세요.
+                            </p>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <h3 class="howtotitle">
+                                트리바고(trivago)에서 저렴한 호텔 찾기</h3>
+                            <p class="howtotext">리바고에서 여러 웹사이트를 한눈에 비교하고 원하는 호텔을 쉽고 저렴하게 찾으실 수 있습니다. 가고 싶은 여행지와 날짜를 선택하시면 스마트한 트리바고 검색 엔진이 자동으로 호텔 요금을 비교해 드립니다. 좀 더 자세한 검색 결과를 원하신다면 요금, 거리(예: 도심에서 거리), 호텔 등급, 고객 평점 등을 기준으로 결과를 보실 수도 있습니다. 저렴한 호스텔에서 럭셔리 호텔까지 트리바고는 간편하게 호텔을 온라인에서 예약하실 수 있도록 도와드립니다. 국내 인기 여행지의 호텔부터 상하이나 런던 같은 세계적인 도시의 호텔까지 떠나고 싶은 곳을 선택하고 원하는 대로 검색해 보세요.
+                            </p>
+                        </div>
+                    </div> 
+
+                    <div class="row col-12">
+                        <div class="col-12 col-lg-6">
+                            <h3 class="howtotitle">
+                                원하는 호텔을 찾는 데 도움이 되는 후기</h3>
+                            <p class="howtotext">1억 7천5백만 개가 넘는 트리바고의 통합 호텔 후기와 1천9백만 장 이상의 사진이 여행지에 대해 더욱 풍부한 정보를 제공해 드립니다. 또한, 호텔에 대한 객관적인 정보를 드리기 위해 트리바고는 익스피디아(Expedia), 호텔스닷컴(Hotels.com) 등 다른 호텔 예약 사이트의 다양한 후기와 평점을 함께 보여드립니다. 트리바고에서 홍콩 여행 정보와 원하는 호텔을 찾아보세요.
+                            </p>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <h3 class="howtotitle">
+                                호텔을 예약하는 방법</h3>
+                            <p class="howtotext">트리바고는 광범위한 호텔 검색을 기반으로 하는 호텔 요금 비교 사이트입니다. 호텔 요금은 전 세계 호텔과 호텔 예약 사이트로부터 전달되는데요, 트리바고에서 검색 조건에 가장 잘 맞는 호텔을 선택하시면 예약은 각 호텔 예약 사이트(트리바고와 링크로 연결된 웹사이트)에서 하시게 됩니다. “선택” 버튼을 클릭하시면 해당 예약 사이트로 바로 이동되며, 해당 사이트에서 트리바고에서 찾은 호텔을 예약하실 수 있어요.<br>트리바고가 400개 이상의 호텔 예약 사이트에서 맞춤가를 찾아드립니다!
+                            </p>
+                        </div>
+                    </div> 
+
+                    <div class="row col-12">
+                        <div class="col-6 col-lg-6 ">
+                            <h3 class="howtotitle">
+                                더 많은 인기도시</h3>
+                            <div class="overflow-auto citylist">
+                                <ul calss="area col-12 px-0 mx-0">
+                                    <li class="li-item col-6 col-lg-4 mx-0 px-0"><a href="">부산</a></li>
+                                    <li class="li-item col-6 col-lg-4  px-0"><a href="">방콕</a></li>
+                                    <li class="li-item col-6 col-lg-4  px-0"><a href="">오사카</a></li>
+                                    <li class="li-item col-6 col-lg-4  px-0 px-0"><a href="">칭다오</a></li>
+                                    <li class="li-item col-6 col-lg-4  px-0 px-0"><a href="">베이징</a></li>
+                                    <li class="li-item col-6 col-lg-4  px-0 px-0"><a href="">마닐라</a></li>
+                                    <li class="li-item col-6 col-lg-4  px-0 px-0"><a href="">싱가포르</a></li>
+                                    <li class="li-item col-6 col-lg-4  px-0 px-0"><a href="">타이페이</a></li>
+                                    <li class="li-item col-6 col-lg-4  px-0 px-0"><a href="">런던</a></li>
+                                    <li class="li-item col-6 col-lg-4  px-0 px-0"><a href="">로스앤젤레스</a></li>
+                                    <li class="li-item col-6 col-lg-4  px-0 px-0"><a href="">시드니</a></li>
+                                    <li class="li-item col-6 col-lg-4  px-0 px-0"><a href="">경주</a></li>
+                                    <li class="li-item col-6 col-lg-4  px-0 px-0"><a href="">후쿠오카</a></li>
+                                    <li class="li-item col-6 col-lg-4  px-0 px-0"><a href="">호치민</a></li>
+                                    <li class="li-item col-6 col-lg-4  px-0 px-0"><a href="">샌프란시스코</a></li>
+                                    <li class="li-item col-6 col-lg-4  px-0 px-0"><a href="">광저우</a></li>
+                                    <li class="li-item col-6 col-lg-4  px-0 px-0"><a href="">밴쿠버</a></li>
+                                    <li class="li-item col-6 col-lg-4  px-0 px-0"><a href="">교토</a></li>
+                                    <li class="li-item col-6 col-lg-4  px-0 px-0"><a href="">대구</a></li>
+                                    <li class="li-item col-6 col-lg-4  px-0 px-0"><a href="">라스베가스</a></li>
+                                    <li class="li-item col-6 col-lg-4  px-0 px-0"><a href="">세부</a></li>
+                                    <li class="li-item col-6 col-lg-4  px-0 px-0"><a href="">로마</a></li>
+                                    <li class="li-item col-6 col-lg-4  px-0 px-0"><a href="">시카고</a></li>
+                                    <li class="li-item col-6 col-lg-4  px-0 px-0"><a href="">보스턴</a></li>
+                                    <li class="li-item col-6 col-lg-4  px-0 px-0"><a href="">쿠알라룸푸르</a></li>
+                                    <li class="li-item col-6 col-lg-4  px-0 px-0"><a href="">베를린</a></li>
+                                    <li class="li-item col-6 col-lg-4  px-0 px-0"><a href="">자카르타</a></li>
+                                    <li class="li-item col-6 col-lg-4  px-0 px-0"><a href="">쿠알라룸푸르</a></li>
+                                    <li class="li-item col-6 col-lg-4  px-0 px-0"><a href="">파타야</a></li>
+                                    <li class="li-item col-6 col-lg-4  px-0 px-0"><a href="">바르셀로나</a></li>
+                                    <li class="li-item col-6 col-lg-4  px-0 px-0"><a href="">프랑크푸르트</a></li>
+                                    <li class="li-item col-6 col-lg-4  px-0 px-0"><a href="">샌디에이고</a></li>
+                                    <li class="li-item col-6 col-lg-4  px-0 px-0"><a href="">멜버른</a></li>
+                                    <li class="li-item col-6 col-lg-4  px-0 px-0"><a href="">대전</a></li>
+                                    <li class="li-item col-6 col-lg-4  px-0 px-0"><a href="">시애틀</a></li>
+                                    <li class="li-item col-6 col-lg-4  px-0 px-0"><a href="">프라하</a></li>
+                                    <li class="li-item col-6 col-lg-4  px-0 px-0"><a href="">하노이</a></li>
+                                    <li class="li-item col-6 col-lg-4  px-0 px-0"><a href="">이스탄불</a></li>
+                                    <li class="li-item col-6 col-lg-4  px-0 px-0"><a href="">밀라노</a></li>
+                                    <li class="li-item col-6 col-lg-4  px-0 px-0"><a href="">토론토</a></li>
+                                    <li class="li-item col-6 col-lg-4  px-0 px-0"><a href="">비엔나</a></li>
+                                    <li class="li-item col-6 col-lg-4  px-0 px-0"><a href="">마이애미</a></li>
+
+                                </ul>
+
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-6 ">
+                            <h3 class="howtotitle">
+                                trivago International</h3>
+                            <div class="overflow-auto citylist">
+                                <ul calss="area col-12 px-0 mx-0">
+                                    <li class="li-item col-6 col-lg-4 mx-0 px-0"><a href="">trivago العالم العربي</a></li>
+                                    <li class="li-item col-6 col-lg-4  px-0"><a href="">trivago Argentina</a></li>
+                                    <li class="li-item col-6 col-lg-4  px-0"><a href="">trivago Australia</a></li>
+                                    <li class="li-item col-6 col-lg-4  px-0 px-0"><a href="">trivago България</a></li>
+                                    <li class="li-item col-6 col-lg-4  px-0 px-0"><a href="">trivago België</a></li>
+                                    <li class="li-item col-6 col-lg-4  px-0 px-0"><a href="">trivago Brasil</a></li>
+                                    <li class="li-item col-6 col-lg-4  px-0 px-0"><a href="">trivago Canada</a></li>
+                                    <li class="li-item col-6 col-lg-4  px-0 px-0"><a href="">trivago Česko</a></li>
+                                    <li class="li-item col-6 col-lg-4  px-0 px-0"><a href="">trivago Chile</a></li>
+                                    <li class="li-item col-6 col-lg-4  px-0 px-0"><a href="">trivago Colombia</a></li>
+                                    <li class="li-item col-6 col-lg-4  px-0 px-0"><a href="">trivago Danmark</a></li>
+                                    <li class="li-item col-6 col-lg-4  px-0 px-0"><a href="">trivago Deutschland</a></li>
+                                    <li class="li-item col-6 col-lg-4  px-0 px-0"><a href="">trivago Ecuador</a></li>
+                                    <li class="li-item col-6 col-lg-4  px-0 px-0"><a href="">trivago Ελλάδα</a></li>
+                                    <li class="li-item col-6 col-lg-4  px-0 px-0"><a href="">trivago España</a></li>
+                                    <li class="li-item col-6 col-lg-4  px-0 px-0"><a href="">trivago France</a></li>
+                                    <li class="li-item col-6 col-lg-4  px-0 px-0"><a href="">trivago Hrvatska</a></li>
+                                    <li class="li-item col-6 col-lg-4  px-0 px-0"><a href="">trivago India</a></li>
+                                    <li class="li-item col-6 col-lg-4 mx-0 px-0"><a href="">trivago العالم العربي</a></li>
+                                    <li class="li-item col-6 col-lg-4  px-0"><a href="">trivago Argentina</a></li>
+                                    <li class="li-item col-6 col-lg-4  px-0"><a href="">trivago Australia</a></li>
+                                    <li class="li-item col-6 col-lg-4  px-0 px-0"><a href="">trivago България</a></li>
+                                    <li class="li-item col-6 col-lg-4  px-0 px-0"><a href="">trivago België</a></li>
+                                    <li class="li-item col-6 col-lg-4  px-0 px-0"><a href="">trivago Brasil</a></li>
+                                    <li class="li-item col-6 col-lg-4  px-0 px-0"><a href="">trivago Canada</a></li>
+                                    <li class="li-item col-6 col-lg-4  px-0 px-0"><a href="">trivago Česko</a></li>
+                                    <li class="li-item col-6 col-lg-4  px-0 px-0"><a href="">trivago Chile</a></li>
+                                    <li class="li-item col-6 col-lg-4  px-0 px-0"><a href="">trivago Colombia</a></li>
+                                    <li class="li-item col-6 col-lg-4  px-0 px-0"><a href="">trivago Danmark</a></li>
+                                    <li class="li-item col-6 col-lg-4  px-0 px-0"><a href="">trivago Deutschland</a></li>
+                                    <li class="li-item col-6 col-lg-4  px-0 px-0"><a href="">trivago Ecuador</a></li>
+                                    <li class="li-item col-6 col-lg-4  px-0 px-0"><a href="">trivago Ελλάδα</a></li>
+                                    <li class="li-item col-6 col-lg-4  px-0 px-0"><a href="">trivago España</a></li>
+                                    <li class="li-item col-6 col-lg-4  px-0 px-0"><a href="">trivago France</a></li>
+                                    <li class="li-item col-6 col-lg-4  px-0 px-0"><a href="">trivago Hrvatska</a></li>
+                                    <li class="li-item col-6 col-lg-4  px-0 px-0"><a href="">trivago India</a></li>
+                                </ul>
+
+                            </div>
+                        </div>
+
+                    </div> 
+
+
+                </div>
+            </div>
+            <!--이용방법 끝-->
+
+            <div class="container-fluid my-0 mx-0 px-0 py-0">
+                <div class="row footer mt-5">
+                    <div class="col-11 col-sm-11 col-lg-7 mx-auto">
+
+                        <p class="fwhite pt-5 mt-5 text-center">
+                            © 2020 Expedia, Inc, an Expedia Group Company. / Expedia Asia Holdings Mauritius / BEX Travel Asia Pte Ltd. All rights reserved.<br>
+                            전화 : +02-3480-0118 | 이메일 : travel@support.expedia.co.kr<br>
+                            트래블 파트너 익스체인지 코리아 주식회사 | 사업자등록번호 821-88-01025<br>
+                            <br>
+                            대표이사:김상범<br>
+                            (주) 벡스트래블코리아 | 서울시 종로구 종로5길 7, Tower8 9층<br>
+                            <br>
+                            대표이사 : 조나단싱클레어닐ㅣ사업자등록번호 : 724-86-00245ㅣ사업자정보확인<br>
+                            관광사업자등록번호 : 제2016-000008호 | 통신판매업신고번호 : 2015-서울종로-1091호<br>
+
+                        </p>
+                        <br>
+                        <div class="sns-area mb-5 text-center">
+                            <a href=""><img src="img/sns/fbicon.png"></a>
+                            <a href=""><img src="img/sns/twticon.png"></a>
+                            <a href=""><img src="img/sns/instaicon.png"></a>
+                            <a href=""><img src="img/sns/yticon.png"></a>
+                            <a href=""><img src="img/sns/linkin.png"></a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row footerend pt-5 pb-3">
+                    <div class="col-12 mx-auto">
+                        <a href="">
+                            <img class="rounded mx-auto d-block" src="img/EG_Lockup_White_on_Blue.svg" alt="expdeia group">
+                        </a>
+                        <br>
+                        <p class="fwhite text-center">
+                            2020 Expdeia group | 어쩌구 저쩌구
+                        </p>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
